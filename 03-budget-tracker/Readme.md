@@ -16,7 +16,6 @@
 - Komponensek újrahasználása
 - Különböző logikák szeparálása
 - Higher Order Comoponents, High Order Functions, Nested components
-- Előző projektek refaktorálása?
 
 ###Hogyan tovább?
 - React Context

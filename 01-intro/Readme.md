@@ -7,7 +7,18 @@ TypeScript - 2012 - Microsoft
 jQuery - 2006  
 React - 2013 - Facebook  
 Angular - 2016    
-    
+
+### EcmaScript
+ES6 újdonságok 
+- classok, inheritance
+- spread operator
+- destructuring
+
+### Typescript
+A Typescrip a JavaScript super-set-je, ez röviden annyit jelent hogy a JS-t bővíti ki extra funkcionalitással, kiegészítésekkel. 
+Talán a legnagyobb haszna és előnye, hogy bevezeti a JS-be a statikus típusosságot. 
+Fontos tudni, hogy ezt a nyelvet már a böngészők nem tudják kezelni, ezért ez le lesz fordítva JS-re.
+
 ### Mi is a React?
 - A React.js egy, a Facebook által fejlesztett Javascript könyvtár/library. Jelenleg a 17-es a legújabb verziója.
     - A library elsősorban olyan problémák megoldására született, mint a DOM dinamikus frissítése, módosítása, aszinkron frissítése. 
@@ -27,7 +38,8 @@ Angular - 2016
 A **01-intro/01/** mappában található *.html* fájlokon keresztül nézzük át, hogy is működik a React, és hogy tudunk egyre jobban el absztraktálni logikákat.
 
 ## Gyakorló feladat:
-Oldd meg a **01-intro/01/hello-react-05-exercise.html**-ben található feladatokat
+Oldd meg a **01-intro/01/05-exercise-welcome-page**-ben található feladatokat
+Oldd meg a **01-intro/01/05-exercise-stopwatch**-ben található feladatokat
 
 ### Node/NPM intro
 - Alapok
@@ -47,7 +59,7 @@ Oldd meg a **01-intro/01/hello-react-05-exercise.html**-ben található feladato
 
 `npm`
 ```shell
-  npm init hello-react
+  npm init react-app hello-react
 ```
 
 - `package.json`
@@ -70,8 +82,14 @@ Oldd meg a **01-intro/01/hello-react-05-exercise.html**-ben található feladato
   - Ennek szintén érdemes nagyvonalakban átfutni a dokumentációját.
   - CRA Templating:
     - Használhatunk különböző sablonokat a projektünk inicializálásakor pl. TypeScript mint default nyelv
-    - `npx create-react-app hello-react --template cra-template-typescript`
+      ```
+      npx create-react-app hello-react --template typescript
+      -vagy-
+      npx create-react-app hello-react --template cra-template-typescript
+      ```
     - https://www.npmjs.com/search?q=cra-template-*&ranking=popularity
 
 - React projektstruktúra, alkalmazás elindítása, és leállítása
-- npm start
+  ```
+  npm start
+  ```
