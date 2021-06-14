@@ -1,4 +1,4 @@
-#0 3 - Budget Tracker
+# 03 - Budget Tracker
 
 ### Egyszerű SPA-k készítése
 - Routing
@@ -8,7 +8,7 @@
 - Mi az hogy Async? Mi az a Promise?
 - fetch API -> axios
 
-###E rror handling
+### Error handling
 
 ### DOM elemek elérése a Ref segítségével
 
