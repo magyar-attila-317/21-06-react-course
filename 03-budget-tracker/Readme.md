@@ -1,23 +1,23 @@
-#03 - Budget Tracker
+#0 3 - Budget Tracker
 
-###Egyszerű SPA-k készítése
+### Egyszerű SPA-k készítése
 - Routing
 - RouteProps
 
-###Async műveletek
+### Async műveletek
 - Mi az hogy Async? Mi az a Promise?
 - fetch API -> axios
 
-###Error handling
+###E rror handling
 
-###DOM elemek elérése a Ref segítségével
+### DOM elemek elérése a Ref segítségével
 
-###React Design Principles
+### React Design Principles
 - Komponensek újrahasználása
 - Különböző logikák szeparálása
 - Higher Order Comoponents, High Order Functions, Nested components
 
-###Hogyan tovább?
+### Hogyan tovább?
 - React Context
 - Redux
 - TypeScript
