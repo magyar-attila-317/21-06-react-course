@@ -1,22 +1,28 @@
-import {useContext, useEffect} from 'react';
-import {UserContext} from '../../App';
+import {useEffect} from 'react';
+import {useAuthentication} from '../../contexts/UserContext';
 
 const ConditionalComponent = (props) => {
 
-    const userContext = useContext(UserContext);
+    const {currentUserInfo, setCurrentUserInfo} = useAuthentication();
 
     useEffect(() => {
-        console.log('current context:', userContext);
+        console.log('current userInfo from context:', currentUserInfo);
 
         console.log('Most már látszódom!');
         return () => {
             console.log('Most el fogok tűnni...');
         };
-    }, []);
+    }, [currentUserInfo]);
 
     useEffect(() => {
         console.log('Megváltozott a név!');
-    }, [props.text]);
+
+        setCurrentUserInfo({
+                               ...currentUserInfo,
+                               name: props.text
+                           });
+
+    }, [props.text]); // eslint-disable-line react-hooks/exhaustive-deps
 
     return <h1>I'm not always visible, but now I am!</h1>;
 };

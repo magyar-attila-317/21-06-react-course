@@ -1,23 +1,7 @@
 import './App.css';
-import {createContext, useState} from 'react';
+import {useState} from 'react';
 import ConditionalComponent from './components/ConditionalComponent/ConditionalComponent';
-
-const defaultUserData = {
-    name: 'Attila',
-    age: 25,
-    isAdmin: false
-};
-
-export const UserContext = createContext(defaultUserData);
-
-const UserContextProvider = (props) => {
-
-    return (
-        <UserContext.Provider value={{...defaultUserData}}>
-            {props.children}
-        </UserContext.Provider>
-    );
-};
+import {UserContextProvider} from './contexts/UserContext';
 
 const App = () => {
 
