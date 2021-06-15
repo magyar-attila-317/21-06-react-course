@@ -1,5 +1,5 @@
 #02 - Blackjack
-
+    
 ### Bevezetés a komponens alapú fejlesztésbe
 - Miért jó ez? Hogy érdemes ezt csinálni?
 - Class based components
@@ -8,15 +8,17 @@
 - Props, propertyk átadása - PropTypes
 - CSS használata: inline styles, css files
 - Listák renderelése
-- key attribute
+    - key attribute
 - Conditional rendering
+- Forms, Controlled és UnControlled componenetsek - 2 way binding
 
 ### React states
 - State, különbségek class és funcional based componenetsek esetében
 - a useState Hook használata
-- Forms, Controlled és UnControlled componenetsek - 2 way binding
 - további hook-ok használata
 - React application lifecycle, Lifecycle hooks
+
+### DOM elemek elérése a Ref segítségével
 
 ### Debugging
 - React DevTools

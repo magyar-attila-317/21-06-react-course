@@ -10,8 +10,6 @@
 
 ### Error handling
 
-### DOM elemek elérése a Ref segítségével
-
 ### React Design Principles
 - Komponensek újrahasználása
 - Különböző logikák szeparálása
