@@ -35,6 +35,14 @@ export const Navbar = (props) => {
                         <li className="nav-item">
                             <Link
                                 className="nav-link active"
+                                to='/category-list'
+                            >
+                                Categories
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link active"
                                 to='/expense-form'
                             >
                                 New Expense
@@ -43,9 +51,17 @@ export const Navbar = (props) => {
                         <li className="nav-item">
                             <Link
                                 className="nav-link active"
-                                to='/expense/1'
+                                to='/expense-list'
                             >
-                                Get Details
+                                Expenses
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                className="nav-link active"
+                                to='/expense-summary'
+                            >
+                                Summary
                             </Link>
                         </li>
                     </ul>

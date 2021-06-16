@@ -11,7 +11,7 @@
 - Mi az hogy Async? Mi az a Promise?
 - fetch API -> axios
 
-### Error handlingf
+### Error handling
 
 ### React Design Principles
 - Komponensek újrahasználása
@@ -20,7 +20,8 @@
 
 ### Hogyan tovább?
 - React Context
-- TypeScrip
+- Build folyamat
+- TypeScript
     - Meglévő projekt migrálása TS-re: https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/
 - Component libraryk használata
     - Material UI

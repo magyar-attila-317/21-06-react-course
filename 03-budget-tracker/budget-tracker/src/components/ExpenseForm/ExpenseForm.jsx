@@ -1,32 +1,41 @@
-import {useState} from 'react';
-import {globalChangeHandler} from '../../utils/globalChangeHandler';
+import {useEffect, useState} from 'react';
+import {globalChangeHandler} from '../../utils/formUtils';
+import {getCategories} from '../../services/categoryService';
+import {saveExpense} from '../../services/expensesService';
 
 export const ExpenseForm = (props) => {
 
     const [expenseForm, setExpenseForm] = useState({
                                                        amount: 0,
                                                        expenseDate: '',
-                                                       category: '',
+                                                       categoryId: '',
                                                        description: ''
                                                    });
+    const [availableCategories, setAvailableCategories] = useState([]);
+
+    useEffect(() => {
+        getCategories()
+            .then(setAvailableCategories);
+    }, []);
 
     const onSaveHandler = () => {
-        console.log(expenseForm);
+        saveExpense(expenseForm)
+            .then(console.log);
     };
 
     return (
         <div className='container'>
             <div className='mb-3'>
                 <label
-                    htmlFor='exampleFormControlInput1'
+                    htmlFor='expenseAmountInput'
                     className='form-label'
                 >
-                    Category name
+                    Expense amount
                 </label>
                 <input
                     type='number'
                     className='form-control'
-                    id='exampleFormControlInput1'
+                    id='expenseAmountInput'
                     name='amount'
                     value={expenseForm.amount}
                     onChange={globalChangeHandler(expenseForm, setExpenseForm)}
@@ -34,15 +43,15 @@ export const ExpenseForm = (props) => {
             </div>
             <div className='mb-3'>
                 <label
-                    htmlFor='exampleFormControlInput1'
+                    htmlFor='expenseDateInput'
                     className='form-label'
                 >
-                    Category name
+                    Date of expense
                 </label>
                 <input
                     type='date'
                     className='form-control'
-                    id='exampleFormControlInput1'
+                    id='expenseDateInput'
                     name='expenseDate'
                     value={expenseForm.expenseDate}
                     onChange={globalChangeHandler(expenseForm, setExpenseForm)}
@@ -50,31 +59,35 @@ export const ExpenseForm = (props) => {
             </div>
             <div className='mb-3'>
                 <label
-                    htmlFor='exampleFormControlInput1'
+                    htmlFor='expenseCategorySelect'
                     className='form-label'
                 >
                     Category name
                 </label>
-                <input
-                    type='text'
-                    className='form-control'
-                    id='exampleFormControlInput1'
-                    name='category'
-                    value={expenseForm.category}
+                <select
+                    className='form-select'
+                    id='expenseCategorySelect'
+                    aria-label='Category name'
+                    name='categoryId'
+                    value={expenseForm.categoryId}
                     onChange={globalChangeHandler(expenseForm, setExpenseForm)}
-                />
+                >
+                    {
+                        availableCategories.map(category => <option value={category.id}>{category.name}</option>)
+                    }
+                </select>
             </div>
             <div className='mb-3'>
                 <label
-                    htmlFor='exampleFormControlInput1'
+                    htmlFor='expenseDescriptionInput'
                     className='form-label'
                 >
-                    Category name
+                    Expense description
                 </label>
                 <input
                     type='text'
                     className='form-control'
-                    id='exampleFormControlInput1'
+                    id='expenseDescriptionInput'
                     name='description'
                     value={expenseForm.description}
                     onChange={globalChangeHandler(expenseForm, setExpenseForm)}

@@ -9,3 +9,13 @@ export const globalChangeHandler = (form, setForm) => {
         setForm(updatedForm);
     };
 };
+
+export const clearForm = (form, setForm) => {
+    const updatedForm = {...form};
+    const formKeys = Object.keys(form);
+    formKeys.forEach(key => {
+        updatedForm[key] = '';
+    });
+    setForm(updatedForm);
+
+};
