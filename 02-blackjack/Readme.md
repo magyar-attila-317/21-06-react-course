@@ -10,7 +10,6 @@
 - Listák renderelése
     - key attribute
 - Conditional rendering
-- Forms, Controlled és UnControlled componenetsek - 2 way binding
 
 ### React states
 - State, különbségek class és funcional based componenetsek esetében

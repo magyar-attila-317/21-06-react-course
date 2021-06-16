@@ -1,14 +1,17 @@
 # 03 - Budget Tracker
 
+### Forms
+- Forms, Controlled és UnControlled componenetsek - 2 way binding
+
 ### Egyszerű SPA-k készítése
-- Routing
+- [Routing](https://reactrouter.com/)
 - RouteProps
 
 ### Async műveletek
 - Mi az hogy Async? Mi az a Promise?
 - fetch API -> axios
 
-### Error handling
+### Error handlingf
 
 ### React Design Principles
 - Komponensek újrahasználása
@@ -17,8 +20,11 @@
 
 ### Hogyan tovább?
 - React Context
-- Redux
-- TypeScript
+- TypeScrip
+    - Meglévő projekt migrálása TS-re: https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/
 - Component libraryk használata
+    - Material UI
+
+- Redux
 - Server Side Rendering
 - React Native
