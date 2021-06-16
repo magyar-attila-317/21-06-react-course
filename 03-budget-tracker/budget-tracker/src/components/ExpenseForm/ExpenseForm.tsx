@@ -2,16 +2,21 @@ import {useEffect, useState} from 'react';
 import {globalChangeHandler} from '../../utils/formUtils';
 import {getCategories} from '../../services/categoryService';
 import {saveExpense} from '../../services/expensesService';
+import {CategoryListModel} from '../../models/api-models/CategoryListModel';
 
-export const ExpenseForm = (props) => {
+interface Props {
+
+}
+
+export const ExpenseForm = (props: Props) => {
 
     const [expenseForm, setExpenseForm] = useState({
-                                                       amount: 0,
+                                                       amount     : 0,
                                                        expenseDate: '',
-                                                       categoryId: '',
-                                                       description: ''
+                                                       categoryId : '',
+                                                       description: '',
                                                    });
-    const [availableCategories, setAvailableCategories] = useState([]);
+    const [availableCategories, setAvailableCategories] = useState<CategoryListModel[]>([]);
 
     useEffect(() => {
         getCategories()

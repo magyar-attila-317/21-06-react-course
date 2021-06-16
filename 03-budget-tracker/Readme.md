@@ -23,6 +23,7 @@
 - Build folyamat
 - TypeScript
     - Meglévő projekt migrálása TS-re: https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/
+    
 - Component libraryk használata
     - Material UI
 

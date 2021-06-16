@@ -25,7 +25,9 @@ export const CategoryForm = (props) => {
                 <label
                     htmlFor='exampleFormControlInput1'
                     className='form-label'
-                >Category name</label>
+                >
+                    Category name
+                </label>
                 <input
                     type='text'
                     className='form-control'
