@@ -18,15 +18,3 @@
 - Különböző logikák szeparálása
 - Higher Order Comoponents, High Order Functions, Nested components
 
-### Hogyan tovább?
-- React Context
-- Build folyamat
-- TypeScript
-    - Meglévő projekt migrálása TS-re: https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/
-    
-- Component libraryk használata
-    - Material UI
-
-- Redux
-- Server Side Rendering
-- React Native

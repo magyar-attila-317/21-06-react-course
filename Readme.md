@@ -90,13 +90,37 @@ Basics, talk about:
 - Extending our TODO App!
     - Rendering lists
     - Conditional rendering
-    - More on styling our components  
+    - More on styling our components
         - [9 Ways to implement styles](https://medium.com/@dmitrynozhenko/9-ways-to-implement-css-in-react-js-ccea4d543aa3)
     - More on Props - Introducing PropTypes
+    - Controlled and Uncontrolled components
     - Stateless components
 
 # 04 - Blackjack!
 
+How to continue the development of an existing project? Since you already have your package.json file, you already
+possess the information what dependencies you need. Now all you must do, is install them.  
+Just run the following command in the projects directory (next to package.json!)
+
+```shell
+npm install
+```
+
+Work in `04-Blackjack` folder, to create a Blackjack application!
+
 # 05 - React - Part 3
 
-- Controlled and Uncontrolled components
+### What's next?
+
+- React Context
+- TypeScript
+    - Meglévő projekt migrálása TS-re: https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/
+- Redux
+- Storybook
+- Server Side Rendering
+- React Native
+- Dive into the build process and Webpack
+- Component libraryk használata
+    - [React-Bootstrap](https://react-bootstrap.github.io/)
+    - [Material UI](https://mui.com/)
+    - [Semantic UI](https://react.semantic-ui.com/)
