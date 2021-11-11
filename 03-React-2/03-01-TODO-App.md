@@ -71,7 +71,7 @@
 - Talk about Higher Order Components
 - Implement Higher Order Components
 
-##### 11. Add the Todo items to the list on every form submission
+##### 11. Add the new Todo items to the list on every form submission
 
 ##### 12. Use different background color for each severity level, on the TODO items
 
@@ -79,4 +79,8 @@
 
 ##### 13. Use conditional rendering to hide completed items
 
-##### 14. Realise this is silly again, and filter the TODO list instead :) 
+##### 14. Realise this is silly again, and filter the TODO list instead :)
+
+##### 15. Some refactoring and type-safety
+
+- Implement PropTypes for components, where necessary

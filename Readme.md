@@ -87,7 +87,7 @@ Basics, talk about:
 
 - Recap - TODO App!
     - Creating the base of our app, using what we've learned so far
-- Extending our TODO App!
+- [Extending our TODO App!](./03-React-2/03-01-TODO-App.md)
     - Rendering lists
     - Conditional rendering
     - More on styling our components
@@ -107,20 +107,40 @@ npm install
 ```
 
 Work in `04-Blackjack` folder, to create a Blackjack application!
+[Instructions](./04-Blackjack/INSTRUCTIONS.md)
 
 # 05 - React - Part 3
+
+- React - Webshop App!
+    - Creating the base of our app, using what we've learned so far
+- [Extending our Webshop App!](./05-React-3/05-01-Webshop-App.md)
+    - Start/mock a small web-server: [Readme](./05-React-3/server-data/README.md)
+    - Axios - HTTP, Promises
+    - Routing
+    - Debugging, error handling
+    - Some personal experiences
+- Testing basics
+- Migrating to TypeScript
+
+# 06 - Budget Tracker - Exercise
+
 
 ### What's next?
 
 - React Context
 - TypeScript
-    - Meglévő projekt migrálása TS-re: https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/
-- Redux
-- Storybook
-- Server Side Rendering
-- React Native
-- Dive into the build process and Webpack
-- Component libraryk használata
+    - [Migrate existing project to TypeScript](https://www.sitepoint.com/how-to-migrate-a-react-app-to-typescript/)
+    - Advanced TypeScript features
+- [Redux](https://react-redux.js.org/)
+- [Storybook](https://storybook.js.org/)
+- [React-RxJS](https://react-rxjs.org/)
+- Server Side Rendering - [Next.js](https://nextjs.org/)
+- [React Native](https://reactnative.dev/)
+- [Dive into the build process and Webpack](https://www.freecodecamp.org/news/an-intro-to-webpack-what-it-is-and-how-to-use-it-8304ecdc3c60/)
+    - [Official docs](https://webpack.js.org/)
+- Component libraries
     - [React-Bootstrap](https://react-bootstrap.github.io/)
     - [Material UI](https://mui.com/)
     - [Semantic UI](https://react.semantic-ui.com/)
+- [In-Depth-Dev](https://indepth.dev/)
+- [Awesome-React](https://github.com/enaqx/awesome-react)
